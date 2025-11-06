@@ -75,7 +75,7 @@ function handleDesktopDevice(item) {
     img_el.setAttribute("alt", item.keyword);
     img_el.style.display = "block";
     img_el.dataset.href =
-      "/exhibition/a_designer.html?designer=" +
+      "../a_designer.html?designer=" +
       encodeURIComponent(item.name_en);
 
     for (let i = 0; i < keyword_elements.length; i++) {
