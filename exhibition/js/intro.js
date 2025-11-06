@@ -5,11 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const played = window.sessionStorage.getItem("intro-played");
 
   if (played) {
+    if (intro) {
+      intro.remove(); // intro 요소 즉시 삭제
+    }
     return;
   }
-  
+
   window.sessionStorage.setItem("intro-played", "true");
   intro.classList.add("intro");
+  
   // 페이드 아웃 함수
   function fadeOutIntro() {
     if (intro) {
