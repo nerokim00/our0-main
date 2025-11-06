@@ -2,7 +2,7 @@
 const el = document.getElementById("name-list");
 el.style.color = "white";
 
-fetch("../../public/database.json")
+fetch("public/database.json")
 .then(res => {
     if (!res.ok) {
         throw new Error(res.statusText);
